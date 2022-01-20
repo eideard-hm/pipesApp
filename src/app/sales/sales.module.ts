@@ -4,6 +4,7 @@ import { NumbersComponent } from './pages/numbers/numbers.component';
 import { NoCommonsComponent } from './pages/no-commons/no-commons.component';
 import { BasicsComponent } from './pages/basics/basics.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
+import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
 
 
@@ -15,7 +16,8 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
     OrdenarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PrimeNgModule,
   ],
   exports: [
     NumbersComponent,
