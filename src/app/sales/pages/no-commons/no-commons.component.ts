@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styles: [
   ]
 })
-export class NoCommonsComponent{
+export class NoCommonsComponent {
 
   // i18nSelect Pipe
   nombre: string = 'Edier';
@@ -18,12 +18,28 @@ export class NoCommonsComponent{
   }
 
   // i18nPlural Pipe
-  clientes: string [] = ['Maria', 'Edier', 'Judith', 'Karoll', 'Ximena'];
+  clientes: string[] = ['Maria', 'Edier', 'Judith', 'Karoll', 'Ximena'];
 
   clientesMap = {
     '=0': 'no tenemos ningún cliente esperando',
     '=1': 'tenemos un cliente esperando',
     'other': 'tenemos # clientes esperando',
+  }
+
+  changePerson() {
+    if (this.nombre === 'Edier' && this.genero === 'masculino') {
+      this.nombre = 'Karoll';
+      this.genero = 'femenino';
+      return;
+    }
+
+    this.nombre = 'Edier';
+    this.genero = 'masculino';
+  }
+
+  deleteClient() {
+    if(this.clientes.length === 0) return;
+    this.clientes.pop();
   }
 
 }
