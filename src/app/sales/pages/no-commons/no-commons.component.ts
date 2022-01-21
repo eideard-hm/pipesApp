@@ -42,4 +42,11 @@ export class NoCommonsComponent {
     this.clientes.pop();
   }
 
+  // KeyValue Pipe
+  persona= {
+    nombre: 'Edier',
+    edad: 18,
+    direccion: 'Bogotá D.C'
+  }
+
 }
