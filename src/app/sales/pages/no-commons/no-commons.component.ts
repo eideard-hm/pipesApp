@@ -38,15 +38,31 @@ export class NoCommonsComponent {
   }
 
   deleteClient() {
-    if(this.clientes.length === 0) return;
+    if (this.clientes.length === 0) return;
     this.clientes.pop();
   }
 
   // KeyValue Pipe
-  persona= {
+  persona = {
     nombre: 'Edier',
     edad: 18,
     direccion: 'Bogotá D.C'
   }
+
+  // Json Pipe
+  heroes = [
+    {
+      nombre: 'Superman',
+      vuela: true
+    },
+    {
+      nombre: 'Robin',
+      vuela: false
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false
+    }
+  ];
 
 }
