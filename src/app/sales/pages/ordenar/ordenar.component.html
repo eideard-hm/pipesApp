@@ -3,6 +3,10 @@
   <h1>Pipes personalizados</h1>
   <hr>
   <p>
-    Pipes creados por {{'nosotros' | mayuscula}} mismos.
+    Pipes creados por {{'nosotros' | mayuscula:isMayuscula}} mismos.
   </p>
+
+  <button pButton
+          label="Toggle Mayusculas"
+          (click)="toggleMayusculas()"></button>
 </div>
